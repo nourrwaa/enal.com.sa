@@ -605,9 +605,28 @@ html[dir="rtl"] .hero__supporting {
   .hero__actions { flex-direction: column; align-items: flex-start; }
 }
 
-/* ============================================================
-   Part 3: Glance + Legacy + Capabilities + Projects
-   ============================================================ */
+@media (min-width: 901px) {
+  .hero__content {
+    padding-top: 0;
+    margin-top: auto;
+    padding-inline-start: 4.5rem;
+  }
+  html[dir="rtl"] .hero__content {
+    padding-top: 0;
+    padding-inline-start: 4.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  html[dir="ltr"] .hero__content {
+    padding-top: 0;
+    margin-top: auto;
+    padding-inline-start: 0;
+  }
+  html[dir="ltr"] .hero__title {
+    font-size: clamp(2.4rem, 8vw, 4rem);
+  }
+}
 
 .glance {
   background: var(--navy);
@@ -1845,6 +1864,17 @@ html[dir="rtl"] .hero__title em {
   font-style: normal;
   font-weight: 300;
   color: var(--gold);
+}
+
+/* Desktop Hero Title size — after all overrides */
+@media (min-width: 901px) {
+  .hero__title {
+    font-size: clamp(2rem, 4.75vw, 5.5rem);
+    line-height: 0.75;
+  }
+  html[dir="rtl"] .hero__title {
+    font-size: clamp(1.5rem, 3.5vw, 4.25rem);
+  }
 }
 
 html[dir="rtl"] .hero__actions {
