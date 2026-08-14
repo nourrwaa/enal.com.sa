@@ -256,7 +256,6 @@ input, textarea, select {
   height: var(--nav-h);
   display: flex;
   align-items: center;
-  overflow: hidden;
   transition: background var(--dur-mid) var(--ease-in-out),
               backdrop-filter var(--dur-mid) var(--ease-in-out),
               box-shadow var(--dur-mid) var(--ease-in-out);
