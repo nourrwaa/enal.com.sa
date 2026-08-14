@@ -364,6 +364,11 @@ function applyLanguage(lang) {
     mobileToggle.textContent = lang === 'ar' ? 'EN | English' : 'AR | العربية';
   }
 
+  const langToggleMobile = document.getElementById('langToggleMobile');
+  if (langToggleMobile) {
+    langToggleMobile.textContent = lang === 'ar' ? '🌐 EN' : '🌐 AR';
+  }
+
   // Update WhatsApp links
   updateWhatsAppLinks(lang);
 
@@ -404,6 +409,9 @@ function initLanguage() {
 
   const mobileToggle = document.getElementById('mobileLangToggle');
   if (mobileToggle) mobileToggle.addEventListener('click', toggleLanguage);
+
+  const langToggleMobile = document.getElementById('langToggleMobile');
+  if (langToggleMobile) langToggleMobile.addEventListener('click', toggleLanguage);
 
   const footerToggle = document.getElementById('footerLangToggle');
   if (footerToggle) footerToggle.addEventListener('click', toggleLanguage);

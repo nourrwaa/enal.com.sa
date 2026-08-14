@@ -580,7 +580,24 @@ html[dir="rtl"] .hero__supporting {
 @media (max-width: 900px) {
   .nav__links, .nav__cta { display: none; }
   .nav__hamburger, .nav__mobile { display: flex; }
-  .nav__logo { padding-top: 4rem; }
+  .nav__logo { padding-top: 4rem; margin-inline-end: auto; }
+  .nav__actions-wrapper { display: none; }
+  .nav__inner { gap: 0.8rem; justify-content: flex-start; }
+  .nav__lang-mobile {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.55);
+    padding: 0 0.8rem;
+    height: 2.4rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: none;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 600px) {
