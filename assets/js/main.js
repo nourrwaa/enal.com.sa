@@ -528,3 +528,88 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
   initServiceModal();
 });
+
+/* ── Towers Gallery Slider ──────────────────────────────────── */
+function initTowersGallery() {
+  const track    = document.getElementById('towersTrack');
+  const dotsWrap = document.getElementById('towersDots');
+  const prevBtn  = document.getElementById('towersPrev');
+  const nextBtn  = document.getElementById('towersNext');
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const slides = [...track.querySelectorAll('.tower__slide')];
+  const total  = slides.length;
+  let current  = 0;
+  let startX   = 0;
+  let isDragging = false;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'towers__dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', `Slide ${i + 1}`);
+    dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+
+  function getSlideWidth() {
+    return slides[0].offsetWidth + parseInt(getComputedStyle(track).gap || '24');
+  }
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, total - 1));
+    const isRtl = document.documentElement.dir === 'rtl';
+    const offset = current * getSlideWidth();
+    track.style.transform = isRtl
+      ? `translateX(${offset}px)`
+      : `translateX(-${offset}px)`;
+
+    // Update dots
+    [...dotsWrap.querySelectorAll('.towers__dot')].forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+      d.setAttribute('aria-selected', i === current ? 'true' : 'false');
+    });
+
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  // Touch / drag support
+  track.addEventListener('pointerdown', e => {
+    startX = e.clientX;
+    isDragging = true;
+    track.setPointerCapture(e.pointerId);
+  });
+
+  track.addEventListener('pointerup', e => {
+    if (!isDragging) return;
+    isDragging = false;
+    const diff = startX - e.clientX;
+    const isRtl = document.documentElement.dir === 'rtl';
+    if (Math.abs(diff) > 50) {
+      if (isRtl) {
+        diff < 0 ? goTo(current + 1) : goTo(current - 1);
+      } else {
+        diff > 0 ? goTo(current + 1) : goTo(current - 1);
+      }
+    }
+  });
+
+  // Keyboard
+  track.setAttribute('tabindex', '0');
+  track.addEventListener('keydown', e => {
+    const isRtl = document.documentElement.dir === 'rtl';
+    if (e.key === 'ArrowRight') { e.preventDefault(); isRtl ? goTo(current - 1) : goTo(current + 1); }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); isRtl ? goTo(current + 1) : goTo(current - 1); }
+  });
+
+  goTo(0);
+}
+
+// Add to DOMContentLoaded
+document.addEventListener('DOMContentLoaded', initTowersGallery);

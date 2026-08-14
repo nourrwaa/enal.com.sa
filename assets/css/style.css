@@ -291,7 +291,7 @@ input, textarea, select {
 }
 
 .nav__logo img {
-  height: 12rem;
+  height: 13.8rem;
   width: auto;
 }
 
@@ -494,6 +494,26 @@ input, textarea, select {
   color: var(--gold);
 }
 
+
+.hero__supporting {
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 1.3vw, 1rem);
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  max-width: 42ch;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  animation: heroFadeUp 0.8s var(--ease-out) 0.6s forwards;
+}
+
+html[dir="rtl"] .hero__supporting {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  letter-spacing: 0;
+  text-align: right;
+  max-width: 38ch;
+}
 .hero__since {
   font-family: var(--font-mono);
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
@@ -1759,6 +1779,12 @@ html[dir="rtl"] .lang-toggle {
 html[dir="rtl"] .nav__link { font-size: 0.85rem; }
 html[dir="rtl"] .nav__cta { font-size: 0.82rem; }
 
+
+/* Logo RTL */
+html[dir="rtl"] .nav__logo img {
+  height: 13.8rem;
+  margin-inline-start: 0.3rem;
+}
 /* Hero */
 html[dir="rtl"] .hero {
   justify-content: flex-start; /* flex-start in RTL is naturally RIGHT */
@@ -1976,4 +2002,287 @@ html[dir="rtl"] .form__submit { align-self: flex-start; }
   html[dir="rtl"] .btn {
     justify-content: center;
   }
+}
+
+/* ============================================================
+   TOWERS — Residential & Office Towers Gallery
+   ============================================================ */
+
+.towers {
+  background: var(--navy-deeper);
+  overflow: hidden;
+}
+
+.towers__header {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.towers__tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.45);
+  margin-top: 1rem;
+  max-width: 52ch;
+}
+
+/* Gallery wrapper */
+.towers__gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Track — horizontal scroll */
+.towers__track {
+  display: flex;
+  gap: 1.5rem;
+  padding-inline: calc((100vw - var(--container)) / 2);
+  padding-block: 0 3rem;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Individual slide */
+.tower__slide {
+  flex: 0 0 clamp(22rem, 38vw, 46rem);
+  position: relative;
+  cursor: pointer;
+}
+
+.tower__img-wrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  position: relative;
+  background: var(--navy-mid);
+}
+
+.tower__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.tower__slide:hover .tower__img-wrap img {
+  transform: scale(1.04);
+}
+
+/* Caption / counter */
+.tower__caption {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 0.2rem 0;
+}
+
+.tower__counter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.3);
+}
+
+.tower__counter-sep {
+  color: var(--gold);
+  opacity: 0.5;
+  margin-inline: 0.3em;
+}
+
+/* Controls */
+.towers__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-block: 1rem 2rem;
+}
+
+.towers__btn {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(210,177,92,0.3);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  transition: all 0.25s;
+  flex-shrink: 0;
+}
+
+.towers__btn:hover {
+  background: rgba(210,177,92,0.1);
+  border-color: var(--gold);
+}
+
+.towers__btn:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+/* Dots */
+.towers__dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.towers__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.towers__dot.active {
+  background: var(--gold);
+  width: 20px;
+  border-radius: 3px;
+}
+
+/* RTL */
+html[dir="rtl"] .towers__track {
+  direction: rtl;
+}
+
+html[dir="rtl"] .tower__caption {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .towers__tagline {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .towers__btn--prev svg {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .towers__btn--next svg {
+  transform: scaleX(-1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tower__slide {
+    flex: 0 0 clamp(16rem, 80vw, 28rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .tower__slide {
+    flex: 0 0 88vw;
+  }
+  .towers__track {
+    gap: 1rem;
+    padding-inline: 1rem;
+  }
+}
+
+/* ============================================================
+   BRAND PHILOSOPHY — Glance section
+   ============================================================ */
+.glance__philosophy {
+  padding: clamp(2rem, 4vw, 3rem) 0 clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid rgba(210,177,92,0.15);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  max-width: 72ch;
+}
+
+.glance__philosophy-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.glance__philosophy-body {
+  font-size: clamp(0.88rem, 1.3vw, 1rem);
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+html[dir="rtl"] .glance__philosophy {
+  max-width: 100%;
+}
+
+html[dir="rtl"] .glance__philosophy-heading,
+html[dir="rtl"] .glance__philosophy-body {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .glance__philosophy-heading {
+  font-family: 'Noto Kufi Arabic', 'Tajawal', system-ui, sans-serif;
+  font-weight: 300;
+}
+
+/* ── Projects intro ─────────────────────────────────────────── */
+.projects__intro {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.4);
+  margin-top: 1.2rem;
+  max-width: 56ch;
+}
+
+html[dir="rtl"] .projects__intro {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+/* ── Quality trust statement ────────────────────────────────── */
+.quality__trust-statement {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-style: italic;
+  color: var(--gold);
+  opacity: 0.75;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+html[dir="rtl"] .quality__trust-statement {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+/* ── Final CTA signature ────────────────────────────────────── */
+.final-cta__signature {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+html[dir="rtl"] .final-cta__signature {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  letter-spacing: 0;
+  font-size: 0.85rem;
 }
