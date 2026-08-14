@@ -288,6 +288,8 @@ input, textarea, select {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  align-self: flex-start;
+  padding-top: 2vw;
 }
 
 .nav__logo img {
