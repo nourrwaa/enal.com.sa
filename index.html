@@ -407,6 +407,13 @@
   <!-- Gallery -->
   <div class="towers__gallery" id="towersGallery" role="region" aria-label="Tower gallery">
 
+    <!-- Prev arrow -->
+    <button class="towers__btn towers__btn--prev" id="towersPrev" aria-label="Previous image">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
     <div class="towers__track" id="towersTrack">
 
       <div class="tower__slide" data-index="0">
@@ -531,19 +538,16 @@
 
     </div><!-- /.towers__track -->
 
-    <!-- Controls -->
+    <!-- Next arrow -->
+    <button class="towers__btn towers__btn--next" id="towersNext" aria-label="Next image">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Controls: dots only -->
     <div class="towers__controls" aria-label="Gallery navigation">
-      <button class="towers__btn towers__btn--prev" id="towersPrev" aria-label="Previous image">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
       <div class="towers__dots" id="towersDots" role="tablist" aria-label="Gallery slides"></div>
-      <button class="towers__btn towers__btn--next" id="towersNext" aria-label="Next image">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
     </div>
 
   </div><!-- /.towers__gallery -->

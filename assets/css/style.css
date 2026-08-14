@@ -2091,7 +2091,7 @@ html[dir="rtl"] .form__submit { align-self: flex-start; }
   display: flex;
   gap: 1.5rem;
   padding-inline: calc((100vw - var(--container)) / 2);
-  padding-block: 0 3rem;
+  padding-block: 0 1.5rem;
   transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform;
 }
@@ -2144,16 +2144,20 @@ html[dir="rtl"] .form__submit { align-self: flex-start; }
   margin-inline: 0.3em;
 }
 
-/* Controls */
+/* Controls — dots only */
 .towers__controls {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding-block: 1rem 2rem;
+  padding-block: 1rem 1.5rem;
 }
 
+/* Arrows — absolute overlay on gallery sides */
 .towers__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 3rem;
   height: 3rem;
   border: 1px solid rgba(210,177,92,0.3);
@@ -2162,13 +2166,19 @@ html[dir="rtl"] .form__submit { align-self: flex-start; }
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background: none;
+  background: rgba(10, 8, 24, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   transition: all 0.25s;
   flex-shrink: 0;
+  z-index: 10;
 }
 
+.towers__btn--prev { inset-inline-start: 1rem; }
+.towers__btn--next { inset-inline-end: 1rem; }
+
 .towers__btn:hover {
-  background: rgba(210,177,92,0.1);
+  background: rgba(210,177,92,0.15);
   border-color: var(--gold);
 }
 
@@ -2292,7 +2302,7 @@ html[dir="rtl"] .tower__quote-text {
 /* Responsive */
 @media (min-width: 769px) {
   .tower__slide {
-    flex: 0 0 clamp(20rem, 30vw, 36rem);
+    flex: 0 0 clamp(18rem, 26vw, 32rem);
   }
   .tower__caption {
     display: none;
@@ -2301,7 +2311,7 @@ html[dir="rtl"] .tower__quote-text {
 
 @media (max-width: 768px) {
   .tower__slide {
-    flex: 0 0 clamp(16rem, 80vw, 28rem);
+    flex: 0 0 clamp(14rem, 72vw, 26rem);
   }
   .tower__quote-index {
     display: none;
