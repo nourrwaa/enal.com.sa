@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-default-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ENAL — Construction, Infrastructure & Civil Works. Experience built since 1976 across Saudi Arabia." />
+  <meta name="theme-color" content="#171143" />
+  <link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="assets/images/favicon-64.png" type="image/png" sizes="64x64" />
+  <title>ENAL — Foundations of a Nation. Since 1976.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Bebas+Neue&family=Tajawal:wght@200;300;400;500;700&family=Noto+Kufi+Arabic:wght@100;200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preload" as="image" href="assets/images/hero.png" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+
+    <a href="#hero" class="nav__logo" aria-label="ENAL — Home">
+      <img src="assets/images/logo-transparent.svg" alt="ENAL" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#about"        class="nav__link" data-en="About"            data-ar="عن الشركة">About</a></li>
+      <li><a href="#capabilities" class="nav__link" data-en="Capabilities"     data-ar="خدماتنا">Capabilities</a></li>
+      <li><a href="#projects"     class="nav__link" data-en="Projects"         data-ar="المشاريع">Projects</a></li>
+      <li><a href="#quality"      class="nav__link" data-en="Quality & Safety" data-ar="الجودة والسلامة">Quality & Safety</a></li>
+      <li><a href="#contact"      class="nav__link" data-en="Contact"          data-ar="تواصل معنا">Contact</a></li>
+    </ul>
+
+    <div class="nav__actions-wrapper">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">🌐 AR</button>
+      <a href="#contact" class="nav__cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</a>
+    </div>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#about"        class="nav__mobile-link" data-mobile-link data-en="About"            data-ar="عن الشركة">About</a>
+  <a href="#capabilities" class="nav__mobile-link" data-mobile-link data-en="Capabilities"     data-ar="خدماتنا">Capabilities</a>
+  <a href="#projects"     class="nav__mobile-link" data-mobile-link data-en="Projects"         data-ar="المشاريع">Projects</a>
+  <a href="#quality"      class="nav__mobile-link" data-mobile-link data-en="Quality & Safety" data-ar="الجودة والسلامة">Quality & Safety</a>
+  <a href="#contact"      class="nav__mobile-link" data-mobile-link data-en="Contact"          data-ar="تواصل معنا">Contact</a>
+  <a href="#contact"      class="nav__mobile-cta"  data-mobile-link data-en="Get in Touch"     data-ar="تواصل معنا">Get in Touch</a>
+  <button class="nav__mobile-lang" id="mobileLangToggle" aria-label="Switch language">AR | العربية</button>
+</div>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero" aria-label="Hero">
+  <div class="hero__bg" id="heroBg" role="img" aria-label="ENAL construction project"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <p class="hero__label"
+       data-en="Construction · Infrastructure · Civil Works"
+       data-ar=" ">
+      Construction · Infrastructure · Civil Works
+    </p>
+
+    <h1 class="hero__title"
+        data-en="Foundations<br /><em>of a Nation.</em>"
+        data-ar="أسس<br /><em>تبني وطناً.</em>">
+      Foundations<br /><em>of a Nation.</em>
+    </h1>
+
+    <p class="hero__since"
+       data-en="Since 1976"
+       data-ar="منذ عام ١٩٧٦">
+      Since 1976
+    </p>
+
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary"
+         data-en="Explore Our Projects"
+         data-ar="استعرض مشاريعنا">
+        Explore Our Projects
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="#contact" class="btn btn--outline"
+         data-en="Get in Touch"
+         data-ar="تواصل معنا">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span class="hero__scroll-text" data-en="Scroll" data-ar="تمرير">Scroll</span>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     AT A GLANCE
+     ============================================================ -->
+<section class="glance" id="about" aria-label="ENAL at a glance">
+  <div class="container">
+    <div class="glance__grid">
+
+      <div class="glance__item reveal">
+        <span class="glance__number">1976</span>
+        <span class="glance__label" data-en="Established"          data-ar="تأسست الشركة">Established</span>
+        <span class="glance__desc"  data-en="Founded in the Kingdom of Saudi Arabia" data-ar="تأسست في المملكة العربية السعودية">Founded in the Kingdom of Saudi Arabia</span>
+      </div>
+
+      <div class="glance__item reveal reveal-delay-1">
+        <span class="glance__number" data-en="Decades" data-ar="عقود">Decades</span>
+        <span class="glance__label"  data-en="Of Experience"       data-ar="من الخبرة">Of Experience</span>
+        <span class="glance__desc"   data-en="Construction & infrastructure delivery" data-ar="تنفيذ مشاريع الإنشاء والبنية التحتية">Construction & infrastructure delivery</span>
+      </div>
+
+      <div class="glance__item reveal reveal-delay-2">
+        <span class="glance__number" data-en="Full"  data-ar="قدرة">Full</span>
+        <span class="glance__label"  data-en="Spectrum Capability" data-ar="متكاملة">Spectrum Capability</span>
+        <span class="glance__desc"   data-en="Civil · Structural · Mechanical · Electrical" data-ar="مدني · إنشائي · ميكانيكي · كهربائي">Civil · Structural · Mechanical · Electrical</span>
+      </div>
+
+      <div class="glance__item reveal reveal-delay-3">
+        <span class="glance__number">KSA</span>
+        <span class="glance__label"  data-en="Project Reach"       data-ar="نطاق المشاريع">Project Reach</span>
+        <span class="glance__desc"   data-en="Delivering across Saudi Arabia" data-ar="التنفيذ في أرجاء المملكة">Delivering across Saudi Arabia</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEGACY TIMELINE
+     ============================================================ -->
+<section class="legacy section" id="legacy" aria-label="Our legacy">
+  <div class="container">
+
+    <header class="legacy__header section-header reveal">
+      <span class="t-label" data-en="Our Legacy" data-ar="إرثنا">Our Legacy</span>
+      <div class="divider"></div>
+      <h2 class="t-title c-dark"
+          data-en="Experience Built&lt;br /&gt;&lt;em&gt;Since 1976.&lt;/em&gt;"
+          data-ar="خبرة راسخة&lt;br /&gt;&lt;em&gt;منذ ١٩٧٦.&lt;/em&gt;">
+        Experience Built<br /><em>Since 1976.</em>
+      </h2>
+      <p class="t-subtitle" style="color:var(--gray-dark);margin-top:1rem;"
+         data-en="Decades of construction and infrastructure delivery across the Kingdom."
+         data-ar="عقود من تنفيذ مشاريع الإنشاء والبنية التحتية في أرجاء المملكة.">
+        Decades of construction and infrastructure delivery across the Kingdom.
+      </p>
+    </header>
+
+    <div class="legacy__timeline">
+
+      <div class="legacy__item reveal">
+        <div class="legacy__year">1976</div>
+        <div class="legacy__body">
+          <div class="legacy__text-block">
+            <span class="legacy__era" data-en="Foundation" data-ar="التأسيس">Foundation</span>
+            <h3 class="legacy__title" data-en="ENAL Established" data-ar="تأسيس إينال">ENAL Established</h3>
+            <p class="legacy__desc"
+               data-en="ENAL was founded in the Kingdom of Saudi Arabia, beginning its journey as a construction and infrastructure company committed to delivering quality civil works across the region."
+               data-ar="تأسست شركة إينال في المملكة العربية السعودية، لتبدأ مسيرتها شركةً متخصصة في الإنشاء والبنية التحتية، ملتزمةً بتقديم أعمال مدنية عالية الجودة في المنطقة.">
+              ENAL was founded in the Kingdom of Saudi Arabia, beginning its journey as a construction and infrastructure company committed to delivering quality civil works across the region.
+            </p>
+          </div>
+          <div class="legacy__image">
+            <img src="assets/images/project-02.jpg" alt="ENAL early construction works" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="legacy__item reveal">
+        <div class="legacy__year" data-en="Growth" data-ar="النمو">Growth</div>
+        <div class="legacy__body">
+          <div class="legacy__text-block">
+            <span class="legacy__era" data-en="Expansion" data-ar="التوسع">Expansion</span>
+            <h3 class="legacy__title" data-en="Infrastructure Expansion" data-ar="توسع في البنية التحتية">Infrastructure Expansion</h3>
+            <p class="legacy__desc"
+               data-en="ENAL expanded its capabilities across civil works, road infrastructure, earthworks, and structural construction — building the foundations of communities and connecting regions across Saudi Arabia."
+               data-ar="وسّعت إينال قدراتها لتشمل الأعمال المدنية وبنية الطرق وأعمال الحفر والإنشاءات الهيكلية، مُرسيةً أسس المجتمعات وواصلةً بين مناطق المملكة.">
+              ENAL expanded its capabilities across civil works, road infrastructure, earthworks, and structural construction — building the foundations of communities and connecting regions across Saudi Arabia.
+            </p>
+          </div>
+          <div class="legacy__image">
+            <img src="assets/images/project-06.jpg" alt="ENAL infrastructure works" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="legacy__item reveal">
+        <div class="legacy__year" data-en="Scale" data-ar="الحجم">Scale</div>
+        <div class="legacy__body">
+          <div class="legacy__text-block">
+            <span class="legacy__era" data-en="Landmark Projects" data-ar="مشاريع بارزة">Landmark Projects</span>
+            <h3 class="legacy__title" data-en="National Infrastructure" data-ar="البنية التحتية الوطنية">National Infrastructure</h3>
+            <p class="legacy__desc"
+               data-en="Contributing to major national infrastructure programmes including airports, railways, road networks, and large-scale civil works that define the Kingdom's built environment."
+               data-ar="المساهمة في برامج البنية التحتية الوطنية الكبرى، بما فيها المطارات والسكك الحديدية وشبكات الطرق والأعمال المدنية الضخمة التي تُشكّل البيئة العمرانية للمملكة.">
+              Contributing to major national infrastructure programmes including airports, railways, road networks, and large-scale civil works that define the Kingdom's built environment.
+            </p>
+          </div>
+          <div class="legacy__image">
+            <img src="assets/images/project-24.jpg" alt="ENAL major infrastructure project" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="legacy__item reveal">
+        <div class="legacy__year" data-en="Today" data-ar="اليوم">Today</div>
+        <div class="legacy__body">
+          <div class="legacy__text-block">
+            <span class="legacy__era" data-en="Continuing Legacy" data-ar="الإرث المستمر">Continuing Legacy</span>
+            <h3 class="legacy__title" data-en="Active Delivery" data-ar="تنفيذ فعّال">Active Delivery</h3>
+            <p class="legacy__desc"
+               data-en="ENAL continues to deliver construction and infrastructure projects across Saudi Arabia — bringing the same commitment to quality, safety, and performance that has defined the company since 1976."
+               data-ar="تواصل إينال تنفيذ مشاريع الإنشاء والبنية التحتية في أرجاء المملكة، محافظةً على ذات الالتزام بالجودة والسلامة والأداء الذي ميّزها منذ عام ١٩٧٦.">
+              ENAL continues to deliver construction and infrastructure projects across Saudi Arabia — bringing the same commitment to quality, safety, and performance that has defined the company since 1976.
+            </p>
+          </div>
+          <div class="legacy__image">
+            <img src="assets/images/project-10.jpg" alt="ENAL current project" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CAPABILITIES
+     ============================================================ -->
+<section class="capabilities section" id="capabilities" aria-label="What we build">
+  <div class="container">
+
+    <header class="capabilities__header section-header reveal">
+      <span class="t-label" data-en="What We Build" data-ar="ماذا نبني">What We Build</span>
+      <div class="divider"></div>
+      <h2 class="t-title"
+          data-en="Full-Spectrum&lt;br /&gt;&lt;em&gt;Construction Capability.&lt;/em&gt;"
+          data-ar="قدرة إنشائية&lt;br /&gt;&lt;em&gt;متكاملة.&lt;/em&gt;">
+        Full-Spectrum<br /><em>Construction Capability.</em>
+      </h2>
+      <p class="t-subtitle" style="margin-top:1rem;"
+         data-en="From earthworks to finishing — every discipline, every scale."
+         data-ar="من أعمال الحفر حتى التشطيبات — كل التخصصات، كل الأحجام.">
+        From earthworks to finishing — every discipline, every scale.
+      </p>
+    </header>
+
+    <div class="capabilities__grid">
+
+      <div class="cap__item reveal" style="--bg-img: url('../images/project-03.jpg')" tabindex="0"
+           data-service-en="Civil &amp; Infrastructure" data-service-ar="الأعمال المدنية والبنية التحتية">
+        <div class="cap__content">
+          <span class="cap__number">01</span>
+          <h3 class="cap__title" data-en="Civil &amp;&lt;br /&gt;Infrastructure" data-ar="الأعمال المدنية&lt;br /&gt;والبنية التحتية">Civil &amp;<br />Infrastructure</h3>
+          <ul class="cap__list">
+            <li data-en="Earth Works"             data-ar="أعمال الحفر والردم">Earth Works</li>
+            <li data-en="Road Works"              data-ar="أعمال الطرق">Road Works</li>
+            <li data-en="Trenching"               data-ar="أعمال الخنادق">Trenching</li>
+            <li data-en="Site Preparation"        data-ar="تجهيز المواقع">Site Preparation</li>
+            <li data-en="Grading &amp; Levelling" data-ar="التسوية والتمهيد">Grading &amp; Levelling</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap__item reveal reveal-delay-1" style="--bg-img: url('../images/project-27.jpg')" tabindex="0"
+           data-service-en="Structural Works" data-service-ar="الأعمال الإنشائية">
+        <div class="cap__content">
+          <span class="cap__number">02</span>
+          <h3 class="cap__title" data-en="Structural&lt;br /&gt;Works" data-ar="الأعمال&lt;br /&gt;الإنشائية">Structural<br />Works</h3>
+          <ul class="cap__list">
+            <li data-en="Concrete &amp; Structural Works" data-ar="الأعمال الخرسانية والإنشائية">Concrete &amp; Structural Works</li>
+            <li data-en="Steel Structural Works"         data-ar="الأعمال الإنشائية الفولاذية">Steel Structural Works</li>
+            <li data-en="Bridges &amp; Overpasses"       data-ar="الجسور والعبارات">Bridges &amp; Overpasses</li>
+            <li data-en="Foundations"                    data-ar="الأساسات">Foundations</li>
+            <li data-en="Retaining Structures"           data-ar="الجدران الاستنادية">Retaining Structures</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap__item reveal reveal-delay-2" style="--bg-img: url('../images/project-30.jpg')" tabindex="0"
+           data-service-en="Mechanical · Electrical · Communication" data-service-ar="الأعمال الميكانيكية والكهربائية والاتصالات">
+        <div class="cap__content">
+          <span class="cap__number">03</span>
+          <h3 class="cap__title" data-en="Mechanical ·&lt;br /&gt;Electrical · Communication" data-ar="ميكانيكا ·&lt;br /&gt;كهرباء · اتصالات">Mechanical ·<br />Electrical · Communication</h3>
+          <ul class="cap__list">
+            <li data-en="Mechanical Works"     data-ar="الأعمال الميكانيكية">Mechanical Works</li>
+            <li data-en="Electrical Works"     data-ar="الأعمال الكهربائية">Electrical Works</li>
+            <li data-en="Communication Works"  data-ar="أعمال الاتصالات">Communication Works</li>
+            <li data-en="Systems Installation" data-ar="تركيب الأنظمة">Systems Installation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap__item reveal" style="--bg-img: url('../images/project-22.jpg')" tabindex="0"
+           data-service-en="Building &amp; Finishing" data-service-ar="البناء والتشطيبات">
+        <div class="cap__content">
+          <span class="cap__number">04</span>
+          <h3 class="cap__title" data-en="Building &amp;&lt;br /&gt;Finishing" data-ar="البناء&lt;br /&gt;والتشطيبات">Building &amp;<br />Finishing</h3>
+          <ul class="cap__list">
+            <li data-en="Building Construction"    data-ar="إنشاء المباني">Building Construction</li>
+            <li data-en="Building Finishing Works" data-ar="أعمال تشطيب المباني">Building Finishing Works</li>
+            <li data-en="Architectural Finishes"   data-ar="التشطيبات المعمارية">Architectural Finishes</li>
+            <li data-en="Interior Works"           data-ar="الأعمال الداخلية">Interior Works</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap__item reveal reveal-delay-1" style="--bg-img: url('../images/project-15.jpg')" tabindex="0"
+           data-service-en="Equipment &amp; Field Capability" data-service-ar="المعدات والقدرة الميدانية">
+        <div class="cap__content">
+          <span class="cap__number">05</span>
+          <h3 class="cap__title" data-en="Equipment &amp;&lt;br /&gt;Field Capability" data-ar="المعدات&lt;br /&gt;والقدرة الميدانية">Equipment &amp;<br />Field Capability</h3>
+          <ul class="cap__list">
+            <li data-en="Heavy Equipment Operations" data-ar="تشغيل المعدات الثقيلة">Heavy Equipment Operations</li>
+            <li data-en="Cranes &amp; Lifting"       data-ar="الرافعات والرفع">Cranes &amp; Lifting</li>
+            <li data-en="Earthmoving Fleet"          data-ar="أسطول الحفر والردم">Earthmoving Fleet</li>
+            <li data-en="Specialised Machinery"      data-ar="الآلات المتخصصة">Specialised Machinery</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap__item reveal reveal-delay-2" style="--bg-img: url('../images/project-35.jpg')" tabindex="0"
+           data-service-en="Project Control" data-service-ar="التحكم في المشاريع">
+        <div class="cap__content">
+          <span class="cap__number">06</span>
+          <h3 class="cap__title" data-en="Project&lt;br /&gt;Control" data-ar="التحكم&lt;br /&gt;في المشاريع">Project<br />Control</h3>
+          <ul class="cap__list">
+            <li data-en="Planning &amp; Scheduling" data-ar="التخطيط والجدولة">Planning &amp; Scheduling</li>
+            <li data-en="Quality Assurance"         data-ar="ضمان الجودة">Quality Assurance</li>
+            <li data-en="Safety Management"         data-ar="إدارة السلامة">Safety Management</li>
+            <li data-en="Progress Monitoring"       data-ar="متابعة التقدم">Progress Monitoring</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED PROJECTS
+     ============================================================ -->
+<section class="projects section" id="projects" aria-label="Featured projects">
+  <div class="container">
+    <header class="projects__header section-header reveal">
+      <span class="t-label" data-en="Featured Projects" data-ar="مشاريع مختارة">Featured Projects</span>
+      <div class="divider"></div>
+      <h2 class="t-title"
+          data-en="Built Across&lt;br /&gt;&lt;em&gt;the Kingdom.&lt;/em&gt;"
+          data-ar="مشاريع في&lt;br /&gt;&lt;em&gt;أرجاء المملكة.&lt;/em&gt;">
+        Built Across<br /><em>the Kingdom.</em>
+      </h2>
+    </header>
+  </div>
+
+  <div class="projects__list">
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-03.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 01" data-ar="المشروع ٠١">Project 01</span>
+        <span class="project-card__category" data-en="Airport Infrastructure" data-ar="بنية تحتية للمطارات">Airport Infrastructure</span>
+        <h3 class="project-card__title"
+            data-en="King Abdulaziz&lt;br /&gt;International Airport"
+            data-ar="مطار الملك عبدالعزيز&lt;br /&gt;الدولي">
+          King Abdulaziz<br />International Airport
+        </h3>
+        <span class="project-card__location" data-en="Jeddah, Saudi Arabia" data-ar="جدة، المملكة العربية السعودية">Jeddah, Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-27.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 02" data-ar="المشروع ٠٢">Project 02</span>
+        <span class="project-card__category" data-en="Railway Infrastructure" data-ar="بنية تحتية للسكك الحديدية">Railway Infrastructure</span>
+        <h3 class="project-card__title"
+            data-en="Haramain&lt;br /&gt;High-Speed Railway"
+            data-ar="قطار الحرمين&lt;br /&gt;السريع">
+          Haramain<br />High-Speed Railway
+        </h3>
+        <span class="project-card__location" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-30.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 03" data-ar="المشروع ٠٣">Project 03</span>
+        <span class="project-card__category" data-en="Railway Infrastructure" data-ar="بنية تحتية للسكك الحديدية">Railway Infrastructure</span>
+        <h3 class="project-card__title"
+            data-en="North&ndash;South&lt;br /&gt;Railway"
+            data-ar="قطار الشمال&lt;br /&gt;والجنوب">
+          North&ndash;South<br />Railway
+        </h3>
+        <span class="project-card__location" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-10.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 04" data-ar="المشروع ٠٤">Project 04</span>
+        <span class="project-card__category" data-en="Bridge &amp; Overpass" data-ar="جسور وعبارات">Bridge &amp; Overpass</span>
+        <h3 class="project-card__title"
+            data-en="Major Bridge&lt;br /&gt;Works"
+            data-ar="أعمال الجسور&lt;br /&gt;الكبرى">
+          Major Bridge<br />Works
+        </h3>
+        <span class="project-card__location" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-33.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 05" data-ar="المشروع ٠٥">Project 05</span>
+        <span class="project-card__category" data-en="Roads &amp; Highways" data-ar="طرق وطرق سريعة">Roads &amp; Highways</span>
+        <h3 class="project-card__title"
+            data-en="Road&lt;br /&gt;Infrastructure"
+            data-ar="البنية التحتية&lt;br /&gt;للطرق">
+          Road<br />Infrastructure
+        </h3>
+        <span class="project-card__location" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-card__bg" style="background-image: url('assets/images/project-28.jpg')"></div>
+      <div class="project-card__overlay"></div>
+      <div class="project-card__content">
+        <span class="project-card__index" data-en="Project 06" data-ar="المشروع ٠٦">Project 06</span>
+        <span class="project-card__category" data-en="Civil Works" data-ar="أعمال مدنية">Civil Works</span>
+        <h3 class="project-card__title"
+            data-en="Civil &amp; Structural&lt;br /&gt;Works"
+            data-ar="الأعمال المدنية&lt;br /&gt;والإنشائية">
+          Civil &amp; Structural<br />Works
+        </h3>
+        <span class="project-card__location" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</span>
+      </div>
+      <div class="project-card__arrow" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROJECT CATEGORIES
+     ============================================================ -->
+<section class="categories section" id="experience" aria-label="Project experience">
+  <div class="container">
+
+    <header class="categories__header section-header reveal">
+      <span class="t-label" style="color:var(--gold-dark)" data-en="Project Experience" data-ar="خبرة المشاريع">Project Experience</span>
+      <div class="divider" style="background:var(--navy)"></div>
+      <h2 class="t-title c-dark"
+          data-en="Across Sectors&lt;br /&gt;&lt;em&gt;and Scales.&lt;/em&gt;"
+          data-ar="عبر القطاعات&lt;br /&gt;&lt;em&gt;والأحجام.&lt;/em&gt;">
+        Across Sectors<br /><em>and Scales.</em>
+      </h2>
+    </header>
+
+    <div class="categories__tabs" role="tablist">
+      <button class="cat__tab active" data-cat="all"     role="tab" aria-selected="true"  data-en="All"        data-ar="الكل">All</button>
+      <button class="cat__tab"        data-cat="airport" role="tab" aria-selected="false" data-en="Airports"   data-ar="المطارات">Airports</button>
+      <button class="cat__tab"        data-cat="railway" role="tab" aria-selected="false" data-en="Railways"   data-ar="السكك الحديدية">Railways</button>
+      <button class="cat__tab"        data-cat="bridge"  role="tab" aria-selected="false" data-en="Bridges"    data-ar="الجسور">Bridges</button>
+      <button class="cat__tab"        data-cat="road"    role="tab" aria-selected="false" data-en="Roads"      data-ar="الطرق">Roads</button>
+      <button class="cat__tab"        data-cat="civil"   role="tab" aria-selected="false" data-en="Civil Works" data-ar="الأعمال المدنية">Civil Works</button>
+      <button class="cat__tab"        data-cat="building" role="tab" aria-selected="false" data-en="Buildings"  data-ar="المباني">Buildings</button>
+    </div>
+
+    <div class="categories__grid">
+      <div class="cat__card visible" data-categories="all airport">
+        <img src="assets/images/project-03.jpg" alt="Airport infrastructure" loading="lazy" />
+        <span class="cat__card__label" data-en="Airport Infrastructure" data-ar="بنية تحتية للمطارات">Airport Infrastructure</span>
+      </div>
+      <div class="cat__card visible" data-categories="all railway">
+        <img src="assets/images/project-27.jpg" alt="Railway infrastructure" loading="lazy" />
+        <span class="cat__card__label" data-en="Railway Infrastructure" data-ar="بنية تحتية للسكك الحديدية">Railway Infrastructure</span>
+      </div>
+      <div class="cat__card visible" data-categories="all railway">
+        <img src="assets/images/project-30.jpg" alt="Railway works" loading="lazy" />
+        <span class="cat__card__label" data-en="Railway Works" data-ar="أعمال السكك الحديدية">Railway Works</span>
+      </div>
+      <div class="cat__card visible" data-categories="all bridge">
+        <img src="assets/images/project-10.jpg" alt="Bridge works" loading="lazy" />
+        <span class="cat__card__label" data-en="Bridge &amp; Overpass" data-ar="جسور وعبارات">Bridge &amp; Overpass</span>
+      </div>
+      <div class="cat__card visible" data-categories="all road">
+        <img src="assets/images/project-33.jpg" alt="Road infrastructure" loading="lazy" />
+        <span class="cat__card__label" data-en="Roads &amp; Highways" data-ar="طرق وطرق سريعة">Roads &amp; Highways</span>
+      </div>
+      <div class="cat__card visible" data-categories="all road">
+        <img src="assets/images/project-35.jpg" alt="Road works" loading="lazy" />
+        <span class="cat__card__label" data-en="Road Works" data-ar="أعمال الطرق">Road Works</span>
+      </div>
+      <div class="cat__card visible" data-categories="all civil">
+        <img src="assets/images/project-28.jpg" alt="Civil works" loading="lazy" />
+        <span class="cat__card__label" data-en="Civil Works" data-ar="الأعمال المدنية">Civil Works</span>
+      </div>
+      <div class="cat__card visible" data-categories="all civil">
+        <img src="assets/images/project-05.jpg" alt="Civil infrastructure" loading="lazy" />
+        <span class="cat__card__label" data-en="Civil Infrastructure" data-ar="البنية التحتية المدنية">Civil Infrastructure</span>
+      </div>
+      <div class="cat__card visible" data-categories="all building">
+        <img src="assets/images/project-22.jpg" alt="Building construction" loading="lazy" />
+        <span class="cat__card__label" data-en="Building Construction" data-ar="إنشاء المباني">Building Construction</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     BUILT TO DELIVER
+     ============================================================ -->
+<section class="deliver section" id="deliver" aria-label="Built to deliver">
+  <div class="container">
+
+    <header class="deliver__header section-header reveal">
+      <span class="t-label" data-en="Our Capability" data-ar="قدراتنا">Our Capability</span>
+      <div class="divider"></div>
+      <h2 class="t-title"
+          data-en="Built to&lt;br /&gt;&lt;em&gt;Deliver.&lt;/em&gt;"
+          data-ar="مُهيَّأون&lt;br /&gt;&lt;em&gt;للتنفيذ.&lt;/em&gt;">
+        Built to<br /><em>Deliver.</em>
+      </h2>
+      <p class="t-subtitle" style="margin-top:1rem;"
+         data-en="The people, equipment, and systems behind every project."
+         data-ar="الكوادر والمعدات والأنظمة خلف كل مشروع.">
+        The people, equipment, and systems behind every project.
+      </p>
+    </header>
+
+    <div class="deliver__grid">
+
+      <div class="deliver__pillar reveal">
+        <div class="deliver__pillar-bg" style="background-image: url('assets/images/project-06.jpg')"></div>
+        <div class="deliver__pillar-overlay"></div>
+        <div class="deliver__pillar-content">
+          <span class="deliver__pillar-icon" data-en="01 — People" data-ar="٠١ — الكوادر">01 — People</span>
+          <h3 class="deliver__pillar-title" data-en="A Skilled&lt;br /&gt;Workforce" data-ar="كوادر بشرية&lt;br /&gt;متخصصة">A Skilled<br />Workforce</h3>
+          <p class="deliver__pillar-desc"
+             data-en="A multi-disciplinary team spanning every trade and discipline required to deliver complex construction and infrastructure projects."
+             data-ar="فريق متعدد التخصصات يضم كل المهن والتخصصات اللازمة لتنفيذ مشاريع الإنشاء والبنية التحتية المعقدة.">
+            A multi-disciplinary team spanning every trade and discipline required to deliver complex construction and infrastructure projects.
+          </p>
+          <div class="deliver__tags">
+            <span class="deliver__tag" data-en="Managers"    data-ar="مديرون">Managers</span>
+            <span class="deliver__tag" data-en="Engineers"   data-ar="مهندسون">Engineers</span>
+            <span class="deliver__tag" data-en="Foremen"     data-ar="مشرفون">Foremen</span>
+            <span class="deliver__tag" data-en="Operators"   data-ar="مشغّلون">Operators</span>
+            <span class="deliver__tag" data-en="Electricians" data-ar="كهربائيون">Electricians</span>
+            <span class="deliver__tag" data-en="Welders"     data-ar="لحّامون">Welders</span>
+            <span class="deliver__tag" data-en="Mechanics"   data-ar="ميكانيكيون">Mechanics</span>
+            <span class="deliver__tag" data-en="Masons"      data-ar="بنّاؤون">Masons</span>
+            <span class="deliver__tag" data-en="Steel Fixers" data-ar="حدّادون">Steel Fixers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="deliver__pillar reveal reveal-delay-1">
+        <div class="deliver__pillar-bg" style="background-image: url('assets/images/project-15.jpg')"></div>
+        <div class="deliver__pillar-overlay"></div>
+        <div class="deliver__pillar-content">
+          <span class="deliver__pillar-icon" data-en="02 — Equipment" data-ar="٠٢ — المعدات">02 — Equipment</span>
+          <h3 class="deliver__pillar-title" data-en="Extensive&lt;br /&gt;Equipment Fleet" data-ar="أسطول معدات&lt;br /&gt;متكامل">Extensive<br />Equipment Fleet</h3>
+          <p class="deliver__pillar-desc"
+             data-en="An extensive fleet of heavy machinery and specialised equipment enabling self-sufficient delivery across all project types."
+             data-ar="أسطول واسع من الآلات الثقيلة والمعدات المتخصصة يُمكّن من التنفيذ الذاتي لجميع أنواع المشاريع.">
+            An extensive fleet of heavy machinery and specialised equipment enabling self-sufficient delivery across all project types.
+          </p>
+          <div class="deliver__tags">
+            <span class="deliver__tag" data-en="Excavators"  data-ar="حفّارات">Excavators</span>
+            <span class="deliver__tag" data-en="Cranes"      data-ar="رافعات">Cranes</span>
+            <span class="deliver__tag" data-en="Loaders"     data-ar="لوادر">Loaders</span>
+            <span class="deliver__tag" data-en="Trucks"      data-ar="شاحنات">Trucks</span>
+            <span class="deliver__tag" data-en="Compactors"  data-ar="هزّازات">Compactors</span>
+            <span class="deliver__tag" data-en="Generators"  data-ar="مولّدات">Generators</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="deliver__pillar reveal reveal-delay-2">
+        <div class="deliver__pillar-bg" style="background-image: url('assets/images/project-24.jpg')"></div>
+        <div class="deliver__pillar-overlay"></div>
+        <div class="deliver__pillar-content">
+          <span class="deliver__pillar-icon" data-en="03 — Control" data-ar="٠٣ — التحكم">03 — Control</span>
+          <h3 class="deliver__pillar-title" data-en="Project&lt;br /&gt;Control Systems" data-ar="أنظمة التحكم&lt;br /&gt;في المشاريع">Project<br />Control Systems</h3>
+          <p class="deliver__pillar-desc"
+             data-en="Structured systems for planning, scheduling, monitoring, and reporting — ensuring every project is delivered on time and to specification."
+             data-ar="أنظمة منظّمة للتخطيط والجدولة والمتابعة وإعداد التقارير، لضمان تسليم كل مشروع في الوقت المحدد ووفق المواصفات.">
+            Structured systems for planning, scheduling, monitoring, and reporting — ensuring every project is delivered on time and to specification.
+          </p>
+          <div class="deliver__tags">
+            <span class="deliver__tag" data-en="Planning"    data-ar="تخطيط">Planning</span>
+            <span class="deliver__tag" data-en="Scheduling"  data-ar="جدولة">Scheduling</span>
+            <span class="deliver__tag" data-en="Monitoring"  data-ar="متابعة">Monitoring</span>
+            <span class="deliver__tag" data-en="Reporting"   data-ar="تقارير">Reporting</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUALITY & SAFETY
+     ============================================================ -->
+<section class="quality section" id="quality" aria-label="Quality and safety">
+  <div class="container">
+    <div class="quality__inner">
+
+      <div class="quality__left reveal">
+        <span class="t-label" style="color:var(--gold);margin-bottom:1.2rem;display:block;"
+              data-en="Quality &amp; Safety" data-ar="الجودة والسلامة">Quality &amp; Safety</span>
+        <div class="divider"></div>
+        <h2 class="quality__headline"
+            data-en="Quality is&lt;br /&gt;&lt;em&gt;a Process.&lt;/em&gt;&lt;br /&gt;Safety is Part&lt;br /&gt;&lt;em&gt;of the Work.&lt;/em&gt;"
+            data-ar="الجودة&lt;br /&gt;&lt;em&gt;منهجية عمل.&lt;/em&gt;&lt;br /&gt;والسلامة&lt;br /&gt;&lt;em&gt;جزء من العمل.&lt;/em&gt;">
+          Quality is<br /><em>a Process.</em><br />Safety is Part<br /><em>of the Work.</em>
+        </h2>
+        <p class="quality__intro"
+           data-en="At ENAL, quality and safety are not separate functions — they are embedded into every stage of planning, execution, and handover across all our projects."
+           data-ar="في إينال، الجودة والسلامة ليستا وظيفتين منفصلتين — بل هما متجذّرتان في كل مرحلة من مراحل التخطيط والتنفيذ والتسليم في جميع مشاريعنا.">
+          At ENAL, quality and safety are not separate functions — they are embedded into every stage of planning, execution, and handover across all our projects.
+        </p>
+      </div>
+
+      <div class="quality__right">
+
+        <div class="quality__block reveal">
+          <span class="quality__block-label" data-en="Quality Assurance" data-ar="ضمان الجودة">Quality Assurance</span>
+          <h3 class="quality__block-title" data-en="Systematic Quality Processes" data-ar="منظومة عمليات الجودة">Systematic Quality Processes</h3>
+          <p class="quality__block-text"
+             data-en="Quality assurance and control systems are applied at every stage of construction — from initial planning through execution and final handover — ensuring work meets specification and client requirements consistently."
+             data-ar="تُطبَّق أنظمة ضمان الجودة ومراقبتها في كل مرحلة من مراحل الإنشاء — من التخطيط الأولي حتى التنفيذ والتسليم النهائي — لضمان مطابقة الأعمال للمواصفات ومتطلبات العميل باستمرار.">
+            Quality assurance and control systems are applied at every stage of construction — from initial planning through execution and final handover — ensuring work meets specification and client requirements consistently.
+          </p>
+        </div>
+
+        <div class="quality__separator"></div>
+
+        <div class="quality__block reveal reveal-delay-1">
+          <span class="quality__block-label" data-en="Safety &amp; Loss Prevention" data-ar="السلامة والوقاية من الخسائر">Safety &amp; Loss Prevention</span>
+          <h3 class="quality__block-title" data-en="A Structured Safety Approach" data-ar="نهج منظّم للسلامة">A Structured Safety Approach</h3>
+          <p class="quality__block-text"
+             data-en="A structured approach to safety and loss prevention is maintained across all operations, with training programmes and site protocols designed to protect people, equipment, and project continuity."
+             data-ar="يُحافَظ على نهج منظّم للسلامة والوقاية من الخسائر في جميع العمليات، مع برامج تدريبية وبروتوكولات موقعية مصمَّمة لحماية الأفراد والمعدات واستمرارية المشروع.">
+            A structured approach to safety and loss prevention is maintained across all operations, with training programmes and site protocols designed to protect people, equipment, and project continuity.
+          </p>
+        </div>
+
+        <div class="quality__separator"></div>
+
+        <div class="quality__block reveal reveal-delay-2">
+          <span class="quality__block-label" data-en="Training" data-ar="التدريب">Training</span>
+          <h3 class="quality__block-title" data-en="Continuous Development" data-ar="التطوير المستمر">Continuous Development</h3>
+          <p class="quality__block-text"
+             data-en="Ongoing training and development programmes ensure that ENAL's workforce maintains the skills, awareness, and discipline required to perform at the highest standard on every project."
+             data-ar="تضمن برامج التدريب والتطوير المستمرة أن يحافظ كوادر إينال على المهارات والوعي والانضباط اللازمين للأداء بأعلى المعايير في كل مشروع.">
+            Ongoing training and development programmes ensure that ENAL's workforce maintains the skills, awareness, and discipline required to perform at the highest standard on every project.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CREDENTIALS
+     ============================================================ -->
+<section class="credentials section" id="credentials" aria-label="Credentials">
+  <div class="container">
+
+    <header class="credentials__header section-header reveal">
+      <span class="t-label" style="color:var(--gold-dark)"
+            data-en="Official Documentation" data-ar="الوثائق الرسمية">Official Documentation</span>
+      <div class="divider" style="background:var(--navy)"></div>
+      <h2 class="t-title c-dark"
+          data-en="Credentials &amp;&lt;br /&gt;&lt;em&gt;Registrations.&lt;/em&gt;"
+          data-ar="الاعتمادات&lt;br /&gt;&lt;em&gt;والتسجيلات.&lt;/em&gt;">
+        Credentials &amp;<br /><em>Registrations.</em>
+      </h2>
+    </header>
+
+    <div class="credentials__track">
+      <div class="cred__card reveal">
+        <img src="assets/images/credential-01.jpg" alt="ENAL official credential" loading="lazy" />
+        <div class="cred__card-overlay">
+          <span class="cred__card-label" data-en="Official Document" data-ar="وثيقة رسمية">Official Document</span>
+        </div>
+      </div>
+      <div class="cred__card reveal reveal-delay-1">
+        <img src="assets/images/credential-02.jpg" alt="ENAL official credential" loading="lazy" />
+        <div class="cred__card-overlay">
+          <span class="cred__card-label" data-en="Official Document" data-ar="وثيقة رسمية">Official Document</span>
+        </div>
+      </div>
+      <div class="cred__card reveal reveal-delay-2">
+        <img src="assets/images/credential-03.jpg" alt="ENAL official credential" loading="lazy" />
+        <div class="cred__card-overlay">
+          <span class="cred__card-label" data-en="Official Document" data-ar="وثيقة رسمية">Official Document</span>
+        </div>
+      </div>
+      <div class="cred__card reveal reveal-delay-3">
+        <img src="assets/images/credential-04.jpg" alt="ENAL official credential" loading="lazy" />
+        <div class="cred__card-overlay">
+          <span class="cred__card-label" data-en="Official Document" data-ar="وثيقة رسمية">Official Document</span>
+        </div>
+      </div>
+      <div class="cred__card reveal reveal-delay-4">
+        <img src="assets/images/credential-05.jpg" alt="ENAL official credential" loading="lazy" />
+        <div class="cred__card-overlay">
+          <span class="cred__card-label" data-en="Official Document" data-ar="وثيقة رسمية">Official Document</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="final-cta" aria-label="Call to action">
+  <div class="final-cta__bg" role="img" aria-label="ENAL construction project"></div>
+  <div class="final-cta__overlay"></div>
+  <div class="final-cta__content reveal">
+    <h2 class="final-cta__title"
+        data-en="Let's Build&lt;br /&gt;&lt;em&gt;What's Next.&lt;/em&gt;"
+        data-ar="لنبني&lt;br /&gt;&lt;em&gt;ما هو قادم.&lt;/em&gt;">
+      Let's Build<br /><em>What's Next.</em>
+    </h2>
+    <p class="final-cta__sub"
+       data-en="Have a project or business inquiry?"
+       data-ar="هل لديك مشروع أو استفسار تجاري؟">
+      Have a project or business inquiry?
+    </p>
+    <a href="#contact" class="btn btn--primary"
+       data-en="Get in Touch" data-ar="تواصل معنا">
+      Get in Touch
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="contact section" id="contact" aria-label="Contact ENAL">
+  <div class="container">
+    <div class="contact__inner">
+
+      <div class="contact__info reveal">
+        <h2 class="contact__info-title"
+            data-en="Get in&lt;br /&gt;&lt;em style='color:var(--gold)'&gt;Touch.&lt;/em&gt;"
+            data-ar="تواصل&lt;br /&gt;&lt;em style='color:var(--gold)'&gt;معنا.&lt;/em&gt;">
+          Get in<br /><em style="color:var(--gold)">Touch.</em>
+        </h2>
+        <p class="contact__info-sub"
+           data-en="Have a project or business inquiry? We'd like to hear from you."
+           data-ar="هل لديك مشروع أو استفسار تجاري؟ يسعدنا التواصل معك.">
+          Have a project or business inquiry? We'd like to hear from you.
+        </p>
+
+        <div class="contact__detail">
+          <div class="contact__detail-item">
+            <span class="contact__detail-label" data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+            <a href="mailto:enal@enal.com.sa" class="contact__detail-value">enal@enal.com.sa</a>
+          </div>
+          <div class="contact__detail-item">
+            <span class="contact__detail-label" data-en="Phone" data-ar="الهاتف">Phone</span>
+            <a href="tel:0505558040" class="contact__detail-value">0505558040</a>
+          </div>
+          <div class="contact__detail-item">
+            <span class="contact__detail-label">WhatsApp</span>
+            <a href="https://wa.me/966505558040?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ENAL%27s%20construction%20services." target="_blank" rel="noopener" class="contact__detail-value">+966 505 558 040</a>
+          </div>
+        </div>
+
+        <a id="whatsappContactBtn" href="https://wa.me/966505558040?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ENAL%27s%20construction%20services." target="_blank" rel="noopener" class="btn btn--outline">
+          <span data-en="Message on WhatsApp" data-ar="راسلنا على واتساب">Message on WhatsApp</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name" data-en="Name *" data-ar="الاسم *">Name *</label>
+              <input class="form__input" type="text" id="name" name="name" data-placeholder-en="Your name" data-placeholder-ar="اسمك" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="company" data-en="Company" data-ar="الشركة">Company</label>
+              <input class="form__input" type="text" id="company" name="company" data-placeholder-en="Your company" data-placeholder-ar="شركتك" placeholder="Your company" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="email" data-en="Email *" data-ar="البريد الإلكتروني *">Email *</label>
+              <input class="form__input" type="email" id="email" name="email" data-placeholder-en="your@email.com" data-placeholder-ar="بريدك@الإلكتروني.com" placeholder="your@email.com" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="phone" data-en="Phone" data-ar="الهاتف">Phone</label>
+              <input class="form__input" type="tel" id="phone" name="phone" data-placeholder-en="+966 5XX XXX XXX" data-placeholder-ar="+966 5XX XXX XXX" placeholder="+966 5XX XXX XXX" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="inquiry" data-en="Project / Inquiry Type" data-ar="نوع المشروع / الاستفسار">Project / Inquiry Type</label>
+            <select class="form__select" id="inquiry" name="inquiry">
+              <option value="" disabled selected data-en="Select inquiry type" data-ar="اختر نوع الاستفسار">Select inquiry type</option>
+              <option value="civil"           data-en="Civil Works"       data-ar="أعمال مدنية">Civil Works</option>
+              <option value="infrastructure"  data-en="Infrastructure"    data-ar="بنية تحتية">Infrastructure</option>
+              <option value="structural"      data-en="Structural Works"  data-ar="أعمال إنشائية">Structural Works</option>
+              <option value="roads"           data-en="Roads &amp; Highways" data-ar="طرق وطرق سريعة">Roads &amp; Highways</option>
+              <option value="buildings"       data-en="Buildings"         data-ar="مباني">Buildings</option>
+              <option value="other"           data-en="Other"             data-ar="أخرى">Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message" data-en="Message *" data-ar="الرسالة *">Message *</label>
+            <textarea class="form__textarea" id="message" name="message" data-placeholder-en="Tell us about your project or inquiry..." data-placeholder-ar="أخبرنا عن مشروعك أو استفسارك..." placeholder="Tell us about your project or inquiry..." required></textarea>
+          </div>
+          <div class="form__success" id="formSuccess" role="alert"
+               data-en="Thank you. Your inquiry has been received. We will be in touch shortly."
+               data-ar="شكراً لك. تم استلام استفسارك. سنتواصل معك قريباً.">
+            Thank you. Your inquiry has been received. We will be in touch shortly.
+          </div>
+          <button type="submit" class="btn btn--primary form__submit"
+                  data-en="Send Inquiry" data-ar="إرسال الاستفسار">
+            Send Inquiry
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+
+    <div class="footer__brand">
+      <img src="assets/images/logo-transparent.svg" alt="ENAL" class="footer__logo" />
+      <p class="footer__tagline" data-en="Construction · Infrastructure · Civil Works" data-ar="إنشاءات · بنية تحتية · أعمال مدنية">Construction · Infrastructure · Civil Works</p>
+      <p class="footer__since" data-en="Since 1976" data-ar="منذ ١٩٧٦">Since 1976</p>
+      <button class="footer__lang" id="footerLangToggle" aria-label="Switch language">AR | العربية</button>
+    </div>
+
+    <div>
+      <p class="footer__col-title" data-en="Navigation" data-ar="التنقل">Navigation</p>
+      <ul class="footer__links">
+        <li><a href="#about"        class="footer__link" data-en="About"            data-ar="عن الشركة">About</a></li>
+        <li><a href="#capabilities" class="footer__link" data-en="Capabilities"     data-ar="خدماتنا">Capabilities</a></li>
+        <li><a href="#projects"     class="footer__link" data-en="Projects"         data-ar="المشاريع">Projects</a></li>
+        <li><a href="#quality"      class="footer__link" data-en="Quality &amp; Safety" data-ar="الجودة والسلامة">Quality &amp; Safety</a></li>
+        <li><a href="#credentials"  class="footer__link" data-en="Credentials"      data-ar="الاعتمادات">Credentials</a></li>
+        <li><a href="#contact"      class="footer__link" data-en="Contact"          data-ar="تواصل معنا">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="footer__col-title" data-en="Contact" data-ar="التواصل">Contact</p>
+      <div class="footer__contact-item">
+        <span class="footer__contact-label" data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+        <a href="mailto:enal@enal.com.sa" class="footer__contact-value">enal@enal.com.sa</a>
+      </div>
+      <div class="footer__contact-item">
+        <span class="footer__contact-label" data-en="Phone" data-ar="الهاتف">Phone</span>
+        <a href="tel:0505558040" class="footer__contact-value">0505558040</a>
+      </div>
+      <div class="footer__contact-item">
+        <span class="footer__contact-label">WhatsApp</span>
+        <a href="https://wa.me/966505558040?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ENAL%27s%20services." target="_blank" rel="noopener" class="footer__contact-value">+966 505 558 040</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__copy" data-en="&copy; 2025 ENAL. All rights reserved." data-ar="&copy; 2025 إينال. جميع الحقوق محفوظة.">&copy; 2025 ENAL. All rights reserved.</span>
+    <span class="footer__legal" data-en="Construction · Infrastructure · Civil Works · Since 1976" data-ar="إنشاءات · بنية تحتية · أعمال مدنية · منذ ١٩٧٦">Construction · Infrastructure · Civil Works · Since 1976</span>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     WHATSAPP FLOATING BUTTON
+     ============================================================ -->
+<a id="whatsappFloat"
+   href="https://wa.me/966505558040?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ENAL%27s%20construction%20services."
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-btn"
+   aria-label="Contact ENAL on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 12V4M3 7l5-5 5 5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
+<!-- ============================================================
+     SERVICE INQUIRY MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <span class="modal__icon" id="modalIcon">ENAL — INQUIRY</span>
+    <h2 class="modal__title" id="modalTitle"
+        data-en="Would you like to inquire about this service?"
+        data-ar="هل تود الاستفسار عن هذه الخدمة؟">
+      Would you like to inquire about this service?
+    </h2>
+    <p class="modal__service" id="modalService"></p>
+    <div class="modal__actions">
+      <button class="modal__confirm" id="modalConfirm"
+              data-en="Yes, Contact Us" data-ar="نعم، تواصل معنا">
+        Yes, Contact Us
+      </button>
+      <button class="modal__cancel" id="modalCancel"
+              data-en="Close" data-ar="إغلاق">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
