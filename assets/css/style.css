@@ -1273,7 +1273,7 @@ html[dir="rtl"] .hero__supporting {
 
 .credentials__track {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 1.5rem;
 }
 
@@ -2423,4 +2423,72 @@ html[dir="rtl"] .final-cta__signature {
   font-family: 'Tajawal', system-ui, sans-serif;
   letter-spacing: 0;
   font-size: 0.85rem;
+}
+
+/* ============================================================
+   CREDENTIALS LIGHTBOX
+   ============================================================ */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 4, 15, 0.95);
+  z-index: 10001;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.open {
+  display: flex;
+}
+
+.lightbox__img-wrap {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lightboxIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.lightbox__img-wrap img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.8);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 1.5rem;
+  inset-inline-end: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(210,177,92,0.15);
+  border: 1px solid rgba(210,177,92,0.3);
+  color: var(--gold);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10002;
+}
+
+.lightbox__close:hover {
+  background: var(--gold);
+  color: var(--navy-deeper);
+}
+
+.cred__card { cursor: zoom-in; }
+
+@keyframes lightboxIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
 }
