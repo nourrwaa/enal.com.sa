@@ -329,6 +329,19 @@ function applyLanguage(lang) {
   html.lang = lang;
   html.dir  = lang === 'ar' ? 'rtl' : 'ltr';
 
+  // Keep document metadata aligned with the visible language.
+  const seoTitle = html.getAttribute(`data-seo-title-${lang}`);
+  const seoDescription = html.getAttribute(`data-seo-description-${lang}`);
+  if (seoTitle) document.title = seoTitle;
+  if (seoDescription) {
+    const description = document.querySelector('meta[name="description"]');
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    [description, ogDescription, twitterDescription].forEach(meta => {
+      if (meta) meta.setAttribute('content', seoDescription);
+    });
+  }
+
   // Update all translatable text elements
   document.querySelectorAll('[data-en][data-ar]').forEach(el => {
     const text = el.getAttribute(`data-${lang}`);
@@ -621,3 +634,37 @@ function initTowersGallery() {
 
 // Add to DOMContentLoaded
 document.addEventListener('DOMContentLoaded', initTowersGallery);
+
+/* ── Credentials Lightbox ───────────────────────────────────── */
+function initCredLightbox() {
+  const overlay   = document.getElementById('credLightbox');
+  const closeBtn  = document.getElementById('lightboxClose');
+  const lightImg  = document.getElementById('lightboxImg');
+  if (!overlay || !closeBtn || !lightImg) return;
+
+  document.querySelectorAll('.cred__card').forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('img');
+      if (!img) return;
+      lightImg.src = img.src;
+      lightImg.alt = img.alt;
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    });
+  });
+
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    lightImg.src = '';
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initCredLightbox);

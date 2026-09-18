@@ -1,0 +1,24 @@
+
+# --- auto-generated: heavy/secret files ---
+node_modules/
+vendor/
+.env
+.env.*
+*.env
+*.sql
+*.sqlite
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.log
+wp-content/uploads/
+public/uploads/
+uploads/
+storage/
+moodledata/
+.build-tmp/
+.cache/
+# ------------------------------------------

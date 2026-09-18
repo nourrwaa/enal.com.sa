@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Keep private and operational paths out of search results.
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+
+Sitemap: https://enal.com.sa/sitemap.xml
